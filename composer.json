@@ -1,6 +1,6 @@
 {
     "name": "millesime/appellation",
-    "descrtiption": "Add your archives built with Millesime to your releases assets into your DevOps lifecycle tool.",
+    "description": "Add your archives built with Millesime to your releases assets into your DevOps lifecycle tool.",
     "authors": [
         {
             "name": "Thomas GASC",
