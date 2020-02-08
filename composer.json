@@ -1,0 +1,29 @@
+{
+    "name": "millesime/appellation",
+    "descrtiption": "Add your archives built with Millesime to your releases assets into your DevOps lifecycle tool.",
+    "authors": [
+        {
+            "name": "Thomas GASC",
+            "email": "thomas@gasc.fr"
+        }
+    ],
+    "require": {
+        "ext-curl": "*",
+    	"millesime/millesime": "dev-master",
+        "symfony/process": "^5.0",
+        "symfony/filesystem": "^5.0",
+        "symfony/console": "^5.0",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Appellation\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/appellation"
+    ]
+}

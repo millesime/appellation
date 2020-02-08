@@ -1,0 +1,28 @@
+{
+    "name": "Appellation",
+    "packages": [
+        {
+            "name": "appellation.phar",
+            "stub": "bin/appellation",
+            "signature": {
+                "algorithm": "SHA512",
+                "privatekey": ""
+            },
+            "finder": {
+                "in": ["."],
+                "name": ["*.php", "appellation"],
+                "notName": ["*Test.php"],
+                "notPath": ["#vendor/.*/.*/Tests#", "#vendor/.*/.*/tests#"],
+                "exclude": ["bin/install", "doc", "tests"],
+                "ignoreDotFiles": true,
+                "ignoreVCS": true,
+                "followLinks": false,
+                "ignoreUnreadableDirs": false
+            },
+            "scripts": [
+                "sed -i '1d' bin/appellation",
+                "composer install --no-dev --optimize-autoloader"
+            ]
+        }
+    ]
+}
